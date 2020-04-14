@@ -3,7 +3,215 @@
 <head><title>Product List</title>
 
  <link rel="stylesheet" type="text/css" href="CSS/rstyle.css">
+<style>
+	
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
+header
+{
+background-position:center;
+
+}
+
+h1 {
+  background-color: #80ced6;
+}
+
+div {
+  background-color: #d5f4e6;
+	display:inline;
+	font-size:30px;
+}
+
+span {
+  background-color: #f18973;
+}
+
+
+.showdata{
+overflow: auto;
+
+ position: absolute;
+  top: 10%;
+  left: 20%;
+  right:20%;
+  width: 70%;
+  height: 92%;
+  border: 5px solid black;
+
+
+}
+
+.rightmenu{color:pink;
+
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 10%;
+  height: 92%;
+  border: 3px solid #73AD21;
+background-image:url(Images/cs50.jpg);
+background-position:center;
+
+}
+
+.leftmenu{ color:olive;
+
+ position: absolute;
+  top: 80px;
+  left: 0%;
+  width: 20%;
+  height: 92%;
+  border: 3px solid #73AD21;
+}
+ 
+.footer
+{
+color:blue;
+position: absolute;
+  top: 102%;
+  left: 3px;
+  right: 10%;
+  width: 99%;
+  height: 5%;
+  border: 1px solid #73AD21;
+background-color:white;
+
+}
+ul
+{
+	list-style-type: none;
+	 margin: 0;
+ 	 padding: 0;
+	
+	
+
+}
+
+li{
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+
+h1 {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: italic;
+  color:olive;
+
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:blue;
+
+}
+#table1 {
+  border-collapse: collapse;
+  border-color: blue;
+}
+
+
+
+.item1 { grid-area: header;background-size:100% 100%; background-image: url("Images/citybank.jpg");background-repeat: no-repeat; background-position: center;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+ height: 100%;
+width:78%;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+	
+	</style>
 
 </head>
 <div>
